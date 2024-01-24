@@ -10,6 +10,8 @@ saludar=function(){
     let mensajebienvenida="Bienvenido "+nombre+" "+apellido;
 
     mostrartexto("resultado",mensajebienvenida);
+    mostrarimagen('imagen','./imagenes/saludo.png');
+    mostrartextoencaja('txtnombre','');
 }
 
 mostrartexto=function(idcomponente,mensaje){
@@ -18,6 +20,16 @@ mostrartexto=function(idcomponente,mensaje){
     componente.innerText=mensaje;
 
         
+}
+mostrarimagen=function(idcomponente,rutaimagen){
+    let componente;
+    componente=document.getElementById(idcomponente);
+    componente.src=rutaimagen;
+}
+mostrartextoencaja=function(idcomponente,mensaje){
+    let componente;
+    componente=document.getElementById(idcomponente);
+    componente.value=mensaje;
 }
 recuperarint=function(idcomponente){
     let int=recuperartexto(idcomponente);
