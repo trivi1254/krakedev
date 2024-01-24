@@ -1,8 +1,23 @@
 saludar=function(){
     let nombre=recuperartexto('txtnombre');
+
     let apellido=recuperartexto('txtapellido');
+
     let edad=recuperarint('EDAD');
+
     let estatura=recuperarfloat('ESTATURA');
+
+    let mensajebienvenida="Bienvenido "+nombre+" "+apellido;
+
+    mostrartexto("resultado",mensajebienvenida);
+}
+
+mostrartexto=function(idcomponente,mensaje){
+    let componente;
+    componente=document.getElementById(idcomponente);
+    componente.innerText=mensaje;
+
+        
 }
 recuperarint=function(idcomponente){
     let int=recuperartexto(idcomponente);
