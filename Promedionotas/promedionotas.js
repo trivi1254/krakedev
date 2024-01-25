@@ -8,6 +8,7 @@ calcularpromedionotas=function(){
     let promedio=calcularpromedio(n1,n2,n3);
     let decimales=promedio.toFixed(2);
     cambiarTexto("total",decimales);
+    mostrarresultado(decimales);
 
 
 }
