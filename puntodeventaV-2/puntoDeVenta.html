@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="serviciosPuntoDeVenta.js"></script>
+    <script src="utilitarios.js"></script>
+    <script src="puntoDeVenta.js"></script>
+    <link href="estilos.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div class="panorama">
+        <div class="imagen">
+            <img src="./imagenes/logoKrakeDev.png" width="500px" />
+        </div>
+
+        <div class="p2">
+            <div class="letrascajas">
+                <h3>Ingrese el nombre del producto</h3>
+            </div>
+            <input type="text" id="txtProducto" />
+                <h3 id="productoerror"></h3>
+            <div class="letrascajas">
+                <h3>Ingrese la cantidad a comprar</h3>
+            </div>
+            <input type="text" id="txtCantidad" />
+                <h3 id="cantidaderror"></h3>
+            <div class="letrascajas">
+                <h3>Ingrese el precio del producto</h3>
+            </div>
+            <input type="text" id="txtPrecio" />
+                <h3 id="precioerror"></h3>
+        </div>
+        <div class="boto">
+            <input type="button" value="CALCULAR TOTAL" onclick="calcularValorTotal()" /> 
+            <input type="button"value="LIMPIAR" onclick="limpiar();" />
+        </div>        
+        
+        
+        <div class="p1">
+            <div class="resultadol">
+                <h3>Subtotal</h3>
+            </div>
+            <h3 id="lblSubtotal">0.0</h3>
+            <div class="resultadol">
+                <h3>Descuento</h3>
+            </div>
+            <h3 id="lblDescuento">0.0</h3>
+            <div class="resultadol">
+                <h3>IVA 12%</h3>
+            </div>
+            <h3 id="lblValorIVA">0.0</h3>
+            <div class="resultadol">
+                <h3>Total</h3>
+            </div>
+            <h3 id="lblTotal">0.0</h3>
+        </div>
+        <div class="imagen2">
+            <img src="./imagenes/notas.png" width="200px" />
+        </div>
+        <div class="total"><h4 id="lblresumen"></h4></div>
+    </div>
+
+
+
+</body>
+
+</html>

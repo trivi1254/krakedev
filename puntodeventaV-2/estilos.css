@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.letrascajas {
+    color: darkred;
+    size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: center;
+}
+
+.resultadol {
+    color: darkgreen;
+    size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.panorama {
+    display: flex;
+    background-color: aquamarine;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: row;
+
+}
+
+.p1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.p2 {
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.imagen {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen2 {
+    padding-top: 20px;
+    justify-content: center;
+
+    margin-left: 200px;
+}
+
+.boto {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+}
+
+.total {
+    background-color: aquamarine;
+    display: flex;
+    align-items: flex-end;
+    color: darkorchid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
