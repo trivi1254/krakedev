@@ -1,0 +1,31 @@
+body{
+    background-color:rgb(21, 152, 222);
+    background-size: cover;
+}
+.titulo{
+    color: darkmagenta;
+    font-family: monospace;
+    font-size: 20px;
+}
+/* Estilos para la caja de texto */
+.caja{
+    padding: 10px; /* Espaciado dentro de la caja de texto */
+    border: 1px solid #ccc; /* Borde de la caja de texto */
+    border-radius: 5px; /* Borde redondeado */
+    margin-right: 10px; /* Margen a la derecha */
+}
+
+/* Estilos para el botón */
+#botonValidar {
+    background-color: #00c91b; /* Color de fondo del botón */
+    color: white; /* Color del texto dentro del botón */
+    
+    border-radius: 5px; /* Borde redondeado */
+    padding: 10px; /* Espaciado dentro del botón */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+}
+
+/* Cambio de color al pasar el cursor sobre el botón */
+#botonValidar:hover {
+    background-color: #8f15e7;
+}
