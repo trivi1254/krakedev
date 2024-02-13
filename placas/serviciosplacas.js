@@ -66,6 +66,29 @@ validarestructura = function (placa) {
    
     
 }
+obtenerprovincia=function(placa){
+    let provincia={
+        "A": "Azuay",
+        "B": "Bolivar",
+        "C": "Chimborazo",
+        "F": " Fransisco de Orellana",
+        "G": "Guayas",
+        "I": "Imbabura",
+        "L": "Loja",
+        "R": "Los Ríos",
+        "M": "Manabí",
+        "N": "Napo",
+        "O": "El Oro",
+        "E": "Esmeraldas",
+        "P": "Pichincha",
+        "S": "Santa Elena",
+        "T": "Tungurahua",
+        "Z": "Zamora Chimchipe"
+    }
+    let primeraletra=placa.charAt(0);
+
+    return provincia[primeraletra] || null
+}
 
 
 
