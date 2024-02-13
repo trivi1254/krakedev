@@ -7,9 +7,15 @@ validarplaca = function () {
         cambiarTexto('errores', 'ESTRUCTURA valida')
         let obtener=obtenerprovincia(cajatexto);
         if(obtener!=null){
-            cambiarTexto('error1',obtener)
+            cambiarTexto('provincia',obtener)
         }else{
-            cambiarTexto('error1','Provincia Incorrecta')
+            cambiarTexto('provincia','Provincia Incorrecta')
+        }
+        let vehiculo=obtenertipodevehiculo(cajatexto);
+        if(vehiculo!==null){
+            cambiarTexto("vehic",vehiculo)
+        }else{
+            cambiarTexto('vehic','Vehiculo incorrecto')
         }
     } else {
         cambiarTexto('errores', 'ESTRUCTURA incorrecta')
