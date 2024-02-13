@@ -17,6 +17,10 @@ validarplaca = function () {
         }else{
             cambiarTexto('vehic','Vehiculo incorrecto')
         }
+        let diapico=obtenerdiapicoyplaca(cajatexto);
+        if(diapico!==null){
+            cambiarTexto('picoyplaca',diapico)
+        }
     } else {
         cambiarTexto('errores', 'ESTRUCTURA incorrecta')
         cambiarTexto('error1',erroresestructura)

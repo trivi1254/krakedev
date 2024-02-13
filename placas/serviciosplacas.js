@@ -126,10 +126,27 @@ obtenertipodevehiculo = function (placa) {
     return vehiculos[segletra] || null
 
 }
+obtenerdiapicoyplaca=function(placa){
+    let dia={
+        '1':'Lunes',
+        '2':'Lunes',
+        '3':'Martes',
+        '4':'Martes',
+        '5':'Miercoles',
+        '6':'Miercoles',
+        '7':'Jueves',
+        '8':'Jueves',
+        '9':'Viernes',
+        '0':'Viernes',
+    }
+    let diaplaca= placa.charAt(7);
+    return dia[diaplaca] || null
+
+}
 
 
 
-
+"Libre Circulacion Sabados , Domingos y Feriados"
 
 
 
