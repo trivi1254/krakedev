@@ -27,3 +27,13 @@ validarplaca = function () {
 
     }
 }
+limpiar=function(){
+    let caja=document.getElementById('text');
+        caja.value='';
+    cambiarTexto('errores','')
+    cambiarTexto('error1','')
+    cambiarTexto('provincia','')
+    cambiarTexto('vehic','')
+    cambiarTexto('picoyplaca','')
+   
+}
